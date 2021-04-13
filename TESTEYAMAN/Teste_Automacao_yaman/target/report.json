@@ -1,0 +1,98 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-13T20:06:59.731Z",
+        "line": 7,
+        "name": "Realizar busca no site",
+        "description": "",
+        "id": "buscar-produto-no-site-shoestock;realizar-busca-no-site",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6066263200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Eu esteja no site \"https://www.shoestock.com.br\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.shoestock.com.br\"",
+                  "offset": 18
+                }
+              ],
+              "location": "Steps.Steps.eu_esteja_no_site(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4164432300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Pesquiso o produto \"Bolsa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bolsa\"",
+                  "offset": 19
+                }
+              ],
+              "location": "Steps.Steps.pesquiso_o_produto(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2864237800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Incluir produto no carrinho",
+            "match": {
+              "location": "Steps.Steps.incluir_produto_no_carrinho()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6945721000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Valido as informacoes",
+            "match": {
+              "location": "Steps.Steps.valido_as_informacoes()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@executa"
+          }
+        ]
+      }
+    ],
+    "name": "Buscar produto no site Shoestock",
+    "description": "  Eu como usuario quero buscar e validar os produtos no carinho ",
+    "id": "buscar-produto-no-site-shoestock",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/yaman.feature",
+    "tags": [
+      {
+        "name": "@executa",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
